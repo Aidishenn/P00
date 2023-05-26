@@ -56,24 +56,43 @@ public class CalculatorTest {
 		//fail("Not yet implemented");
 		int a = 1234;
 		int b = 8765;
-			Calculator cal = new Calculator();
-			int actual = cal.add(a, b);
-			
-			int expected = 9999;
-			assertEquals(expected, actual);
+		Calculator cal = new Calculator();
+		int actual = cal.add(a, b);
+
+		int expected = 9999;
+		assertEquals(expected, actual);
 	}
 
 
-@Test
+	@Test
 	public void testSubtract() {
-	int a = 9876;
-	int b = 4321;
-	
+		int a = 9876;
+		int b = 4321;
+
+		Calculator cal = new Calculator();
+		int actual = cal.subtract(a, b);
+
+		int expected = 5555;
+		assertEquals(actual,expected);
+	}
+@Test
+public void testmulitple() {
+	int a = 3;
+	int b = 2;
 	Calculator cal = new Calculator();
-	int actual = cal.subtract(a, b);
+	int actual = cal.multiple(a,b);
 	
-	int expected = 5555;
+	int expected = 6;
 	assertEquals(actual,expected);
 }
-
+@Test
+public final void testDivide() {
+	int a = 6;
+	int b = 3;
+	Calculator cal = new Calculator();
+	int actual = cal.divide(a, b);
+	
+	int expected = 2;
+	assertEquals(actual,expected);
+}
 }

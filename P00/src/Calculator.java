@@ -21,4 +21,22 @@ public class Calculator {
 		return a-b;
 		
 	}
+	/**
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public int multiple(int a, int b) {
+		// TODO Auto-generated method stub
+		return a*b;
+	}
+	/**
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public int divide(int a, int b) {
+		// TODO Auto-generated method stub
+		return a/b;
+	}
 }
