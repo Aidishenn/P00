@@ -65,7 +65,7 @@ public class CalculatorTest {
 
 
 @Test
-	public final void testSubtract() {
+	public void testSubtract() {
 	int a = 9876;
 	int b = 4321;
 	
